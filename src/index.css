@@ -1,0 +1,23 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+.menu{
+  justify-content: space-around;
+}
+
+body{
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1{
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.floatComp{
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}

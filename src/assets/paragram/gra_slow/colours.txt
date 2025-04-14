@@ -1,0 +1,4 @@
+#F2F2F2 -napisy, kafelki
+#BFBFBF -mniej ważne napisy
+#0D0D0D -tło
+#404040 i  #8C8C8C interaktywne frame'y
