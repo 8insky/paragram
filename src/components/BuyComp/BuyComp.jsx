@@ -5,7 +5,7 @@ const BuyComp = () => {
 
   const buyRef = useRef(null)
   return (
-    <section ref={buyRef} className="w-full min-h-[30vh] h-{20vh} bg-white flex flex-col items-center gap-[20px] px-6 text-left">
+    <section ref={buyRef} className="w-full min-h-[30vh] h-{10vh} bg-white flex flex-col items-center gap-[20px] px-6 text-left">
       <h2 className="text-4xl md:text-5xl font-extrabold text-[#611c35] drop-shadow-md mb-6">
         KUP TERAZ – ZACZNIJ TWORZYĆ!
       </h2>
