@@ -5,6 +5,7 @@ import About from './components/About/About'
 import BuyComp from './components/BuyComp/BuyComp'
 import FloatComp from './components/FloatComp/FloatComp'
 import Break from './components/Break/Break'
+import Object from './components/Object/Object'
 import { useState } from 'react'
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
     <>
     <Header menuVisibility = {menuVisibility} setMenuVisibility = {setMenuVisibility}/>
     <Hero/>
+    <Object/>
+   
     <About/>
     <BuyComp/>
     <Break />
