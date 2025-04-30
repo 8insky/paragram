@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { gsap } from 'gsap'
 import box from '../../assets/box.png'
+import FloatComp from '../FloatComp/FloatComp'
 
 const Hero = () => {
   const boxRef = useRef(null)
+   const [menuVisibility, setMenuVisibility] = useState(false)
 
   useEffect(() => {
   
@@ -47,6 +49,7 @@ const Hero = () => {
   return (
     
     <div className="w-screen h-screen relative bg-white overflow-hidden">
+      <FloatComp  menuVisibility = {menuVisibility} setMenuVisibility = {setMenuVisibility}/>
 
       
       <div
@@ -68,17 +71,15 @@ const Hero = () => {
       />
 
   
-      <div className="absolute top-[10%] flex w-full z-10"> 
-        <div className="w-[100vh] h-[270px] rounded flex-shrink-0"></div>
-        <h1
-          className="pl-10 w-full absolute flex flex-col justify-center align-middle text-[#F4845F] text-left text-5xl md:text-4xl font-bold leading-tight z-20" // Upewnij się, że tekst jest nad gradientem
-        >
-          <span className="block word drop-shadow-md">LEKKO,</span>
-          <span className="block word drop-shadow-md">ZABAWNIE,</span>
-          <span className="block word drop-shadow-md">KREATYWNIE</span>
-          <span className="block word text-4xl drop-shadow-md">– GRAMY?</span>
-        </h1>
-      </div>
+<div className="absolute top-[10%] left-4 right-4 z-10 flex justify-start">
+  <h1 className="text-white text-left text-5xl md:text-4xl font-extrabold leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] space-y-2">
+    <span className="block word">LEKKO,</span>
+    <span className="block word">ZABAWNIE,</span>
+    <span className="block word">KREATYWNIE</span>
+    <span className="block word text-4xl md:text-3xl">– GRAMY?</span>
+  </h1>
+</div>
+
 
     
       <div className="absolute inset-0 mt-[190px] flex items-center justify-center pointer-events-none z-10"> 
@@ -89,6 +90,8 @@ const Hero = () => {
           className="w-[380px] max-w-[85%] h-auto drop-shadow-[0_15px_25px_rgba(0,0,0,0.35)] animate-float z-20" 
         />
       </div>
+
+      
     </div>
   )
 }
