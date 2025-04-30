@@ -6,6 +6,8 @@ import BuyComp from './components/BuyComp/BuyComp'
 import FloatComp from './components/FloatComp/FloatComp'
 import Break from './components/Break/Break'
 import Object from './components/Object/Object'
+import Faq from './components/faq/Faq'
+import Opinions from './components/Opinions/Opinions'
 import { useState } from 'react'
 
 function App() {
@@ -14,17 +16,21 @@ function App() {
 
 
   return (
-    <>
+    <div >
     <Header menuVisibility = {menuVisibility} setMenuVisibility = {setMenuVisibility}/>
     <Hero/>
-    <Object/>
    
     <About/>
+
+    
     <BuyComp/>
+    <Opinions/>
+    <Faq/>
     <Break />
-    <FloatComp  menuVisibility = {menuVisibility} setMenuVisibility = {setMenuVisibility}/>
-  
-    </>
+    <div className='relative'>
+    
+  </div>
+    </div>
   )
 }
 
