@@ -130,7 +130,7 @@ const FloatComp = ({ setMenuVisibility }) => {
           
           {/* CTA Text */}
           <div ref={textRef} className="text-sm font-medium text-gray-800">
-            Check out our new product!
+            Dołącz do zabawy!
           </div>
         </div>
         
@@ -142,32 +142,35 @@ const FloatComp = ({ setMenuVisibility }) => {
         </div>
       </div>
 
-      {/* Expanded state content - simplified for better performance */}
+      {/* Expanded state content - updated to match the provided design */}
       <div 
         ref={expandedContentRef}
-        className={`w-full h-full flex opacity-0 transition-opacity duration-300 ${
+        className={`w-full h-full flex flex-col items-center justify-center p-8 opacity-0 transition-opacity duration-300 ${
           isExpanded ? 'flex' : 'hidden'
         }`}
       >
-        {/* Left side - colored div instead of 3D model */}
-        <div className="w-1/2 flex items-center justify-center p-8">
-          <div className="w-64 h-64 rounded-xl bg-green-500 shadow-lg"></div>
-        </div>
-        
-        {/* Right side - content */}
-        <div className="w-1/2 flex flex-col items-start justify-center px-8">
-          <h2 className="text-3xl font-bold mb-4">Experience Our Product</h2>
-          <p className="text-base text-gray-700 mb-6">
-            Discover the amazing features and benefits of our latest innovation. 
-            Perfect for those who demand the very best.
-          </p>
-          <div className="flex gap-4">
-            <button className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium">
-              Buy Now
-            </button>
-            <button className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors font-medium">
-              Learn More
-            </button>
+        {/* Card-like container to match the design */}
+        <div className="flex flex-col items-center justify-center bg-white rounded-3xl border-2 border-black p-8 shadow-lg max-w-md w-full">
+          {/* Green div (already present, styled to match the image) */}
+          <div className="w-64 h-80 rounded-2xl bg-green-500 border-2 border-black mb-6"></div>
+          
+          {/* Text section */}
+          <div className="flex flex-col items-center w-full">
+            <h2 className="text-3xl font-bold mb-2">PARAGRAM</h2>
+            <p className="text-2xl font-semibold mb-6">60,00 zł</p>
+            
+            {/* Buttons row */}
+            <div className="flex gap-4 w-full">
+              {/* Yellow button/area with text */}
+              <div className="flex-grow px-6 py-3 bg-yellow-400 text-black rounded-xl border-2 border-black flex items-center justify-center font-medium">
+                Dodaj do koszyka
+              </div>
+              
+              {/* Blue button (Buy Now) */}
+              <button className="px-6 py-3 bg-blue-600 text-white rounded-xl border-2 border-black flex items-center justify-center font-medium">
+                Kup teraz
+              </button>
+            </div>
           </div>
         </div>
       </div>
