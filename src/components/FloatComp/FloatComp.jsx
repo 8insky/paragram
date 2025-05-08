@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import box from '../../assets/box.png';
+// import box from '../../assets/box.png';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Object from '../Object/Object';
@@ -56,7 +56,7 @@ const FloatComp = ({ setMenuVisibility }) => {
     <div
       ref={floatRef}
       id="float-comp"
-      className="floatComp fixed z-50 h-16 bottom-7 left-1/2 transform -translate-x-1/2 w-[95%] max-w-[600px] rounded-2xl bg-gradient-to-r from-white/80 to-cyan-100/90 backdrop-blur-md flex align-middle shadow-xl border border-white/30"
+      className="floatComp fixed z-50 h-16 bottom-7 left-1/2 transform -translate-x-1/2 w-[95%]  rounded-2xl bg-gradient-to-r from-white/80 to-cyan-100/90 backdrop-blur-md shadow-xl border border-white/30"
     >
       
         <Object />
